@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:marvelyprojects/controlpanel.dart';
 import 'package:marvelyprojects/files_dart/aurth_app/passwordreset.dart';
 import 'package:marvelyprojects/files_dart/aurth_app/signup.dart';
 import 'package:marvelyprojects/files_dart/aurth_app/tow_step_verification.dart';
@@ -177,7 +178,7 @@ class _authState extends State<auth> {
                                 Fluttertoast.showToast(msg: "Correct Password");
                                 Navigator.of(context).push(SwipeablePageRoute(
                                     canOnlySwipeFromEdge: true,
-                                    builder: (BuildContext context) =>homepage_app()));
+                                    builder: (BuildContext context) =>main_controlpanel()));
                               } else {
                                 Fluttertoast.showToast(
                                     msg:
